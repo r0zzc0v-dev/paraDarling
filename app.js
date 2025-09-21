@@ -39,12 +39,12 @@ togglePlayer.addEventListener("click", function() {
     isHidden = !isHidden;
     if(isHidden){
         musicPlayer.classList.remove("hide");
-        togglePlayer.innerHTML = '<img class="w-[98%]" src="icons/close.svg">';
+        togglePlayer.innerHTML = '<img class="w-[98%]" src="close.svg">';
         trackInfo.style.transitionDelay = "0.4s";
         trackNav.style.transitionDelay = "0.4s";
     } else {
         musicPlayer.classList.add("hide");
-        togglePlayer.innerHTML = '<img class="w-full" src="icons/plus.svg">';
+        togglePlayer.innerHTML = '<img class="w-full" src="plus.svg">';
         trackInfo.style.transitionDelay = "0s";
         trackNav.style.transitionDelay = "0s";
     }
@@ -160,14 +160,14 @@ function playPauseTrack(){
 function playTrack(){
     currentTrack.play();
     isPlaying = true;
-    playPauseBtn.innerHTML = '<img class="w-8" src="icons/pause.svg">';
+    playPauseBtn.innerHTML = '<img class="w-8" src="pause.svg">';
     soundBarsLottie.play();
 }
 
 function pauseTrack(){
     currentTrack.pause();
     isPlaying = false;
-    playPauseBtn.innerHTML = '<img class="w-8" src="icons/play.svg">';
+    playPauseBtn.innerHTML = '<img class="w-8" src="play.svg">';
     soundBarsLottie.stop();
 }
 
